@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Wilson Sons" },
+      { name: "description", content: "Port Terminal Tours is a modern, responsive landing page for Wilson Sons, facilitating technical visit registrations to their port terminals." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Wilson Sons" },
+      { property: "og:description", content: "Port Terminal Tours is a modern, responsive landing page for Wilson Sons, facilitating technical visit registrations to their port terminals." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Wilson Sons" },
+      { name: "twitter:description", content: "Port Terminal Tours is a modern, responsive landing page for Wilson Sons, facilitating technical visit registrations to their port terminals." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f237965e-6708-4e28-a2c9-42c4bf5a5e52/id-preview-e2c642b8--96abf201-9a2f-4e28-9aec-fc3fb44cbf8a.lovable.app-1780236470185.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f237965e-6708-4e28-a2c9-42c4bf5a5e52/id-preview-e2c642b8--96abf201-9a2f-4e28-9aec-fc3fb44cbf8a.lovable.app-1780236470185.png" },
     ],
     links: [
       {
