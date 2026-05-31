@@ -6,7 +6,7 @@ import {
   Ship,
   ShieldCheck,
   HardHat,
-  Vest,
+  
   AlertTriangle,
   UserCheck,
   ArrowRight,
