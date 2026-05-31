@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import {
   Anchor,
   GraduationCap,
@@ -6,7 +5,6 @@ import {
   Ship,
   ShieldCheck,
   HardHat,
-  
   AlertTriangle,
   UserCheck,
   ArrowRight,
@@ -19,36 +17,7 @@ import teconRioGrande from "@/assets/tecon-rio-grande.jpg";
 const FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSdHvEkKnVBEwGyyG87wgXz5fWR4fkQaFjMfOabDObrb1aIZ4g/viewform?usp=header";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Wilson Sons | Visita Técnica aos Terminais Portuários" },
-      {
-        name: "description",
-        content:
-          "Inscreva-se na visita técnica aos terminais Tecon Salvador e Tecon Rio Grande. Conheça de perto a operação portuária que conecta o Brasil ao mundo.",
-      },
-      { property: "og:title", content: "Wilson Sons | Visita Técnica aos Terminais" },
-      {
-        property: "og:description",
-        content:
-          "Inscreva-se na visita técnica aos terminais Wilson Sons e vivencie a logística portuária real.",
-      },
-      { property: "og:image", content: heroPort },
-    ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap",
-      },
-    ],
-  }),
-  component: Landing,
-});
-
-function Landing() {
+export default function App() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -158,24 +127,26 @@ function Experience() {
     { icon: Lightbulb, title: "Inovação", desc: "Tecnologia aplicada à operação." },
     { icon: Anchor, title: "Operação Portuária", desc: "Bastidores de um terminal global." },
   ];
+  const points = [
+    "Acesso guiado a áreas operacionais",
+    "Conversa com profissionais do setor",
+    "Visão completa da cadeia logística",
+    "Certificado de participação",
+  ];
   return (
     <section id="experiencia" className="py-24 sm:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-center">
         <div>
           <span className="text-sm font-semibold text-cyan uppercase tracking-widest">A Experiência</span>
           <h2 className="mt-4 font-display text-3xl sm:text-5xl font-bold text-navy leading-tight">
-            Imersão na operação portuária que move o Brasil
+            Imersão na operação portuária real
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            A visita técnica Wilson Sons é uma jornada educacional dentro de um terminal portuário em plena operação. Estudantes e interessados acompanham, com instrutores especializados, cada etapa da movimentação de carga — do atracamento do navio ao despacho dos contêineres.
+            Mais do que uma visita, uma vivência. Estudantes e interessados acompanham de perto o dia a dia de um terminal portuário em pleno funcionamento.
           </p>
-          <ul className="mt-8 space-y-4">
-            {[
-              "Objetivo educacional alinhado com cursos de logística, engenharia e administração",
-              "Contato direto com tecnologia portuária e processos operacionais",
-              "Aberto a estudantes e profissionais interessados em logística, tecnologia e operações",
-            ].map((t) => (
-              <li key={t} className="flex gap-3 text-foreground">
+          <ul className="mt-8 space-y-3">
+            {points.map((t) => (
+              <li key={t} className="flex items-start gap-3 text-navy">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-cyan shrink-0" />
                 <span>{t}</span>
               </li>
