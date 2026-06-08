@@ -31,6 +31,16 @@ export default function App() {
   );
 }
 
+function WsLogo({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 52 32" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="52" height="32" rx="7" fill="#FFFFFF" />
+      <text x="9" y="23" fontFamily="'Poppins', sans-serif" fontSize="17" fontWeight="700" fill="#001C43">W</text>
+      <text x="27" y="23" fontFamily="'Poppins', sans-serif" fontSize="17" fontWeight="700" fill="#00BEDE">S</text>
+    </svg>
+  );
+}
+
 function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-navy/70 border-b border-white/10">
