@@ -46,7 +46,7 @@ function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-navy/70 border-b border-white/10">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 text-white">
-          <Anchor className="h-6 w-6 text-cyan" strokeWidth={2.2} />
+          <WsLogo className="h-7 w-auto" />
           <span className="font-display font-bold tracking-tight text-lg">Wilson Sons</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/80">
@@ -335,7 +335,7 @@ function Footer() {
     <footer className="bg-navy-deep text-white/70 py-10">
       <div className="mx-auto max-w-7xl px-6 text-center">
         <div className="flex items-center justify-center gap-2 text-white">
-          <Anchor className="h-5 w-5 text-cyan" />
+          <WsLogo className="h-5 w-auto" />
           <span className="font-display font-semibold">Wilson Sons</span>
         </div>
         <p className="mt-4 text-sm">
